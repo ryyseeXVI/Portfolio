@@ -87,11 +87,6 @@ export const PROJECTS_DATA = [
       tags: ['NextJS', 'TypeScript', 'Tailwind', 'React Native', 'Expo', 'Supabase', 'Sentry', 'School Project'],
     },
     {
-      title: "Noxus Cinema",
-      description: "A Allo-ciné like web platform that allows users to discover movies, actors, read reviews in both Vue2 and Vue3",
-      tags: ['VueJS', 'Pinia', 'APIs', 'Tanstack', 'Personal Project'],
-    },
-    {
       title: "Zappy",
       description: "An AI multiplayer game where AIs have to gather resources and evolve together to survive",
       tags: ['C', "Unity", "C#", 'C++', 'SDL2', 'Python', 'Game Dev', "AI", "Networking", 'School Project'],
@@ -145,6 +140,11 @@ export const PROJECTS_DATA = [
       title: "MyNavy",
       description: "A Battleship-like game developed in C with signal handling",
       tags: ['C', 'Signal Handling', 'School Project'],
+    },
+    {
+      title: "Noxus Cinema",
+      description: "A Allo-ciné like web platform that allows users to discover movies, actors, read reviews in both Vue2 and Vue3",
+      tags: ['VueJS', 'Pinia', 'APIs', 'Tanstack', 'Personal Project'],
     },
     {
       title: "Temtem-Promise-V1",
