@@ -79,71 +79,81 @@ export const PROJECTS_DATA = [
     {
       title: "Arcade",
       description: "A software platform that allows users to play a variety of games, developed in C++ with the NCurses, SDL2, SFML libraries and a custom game engine.",
-      tags: ['C++', 'C', 'NCurses', 'SDL2', 'SFML', 'Game Design'],
+      tags: ['C++', 'C', 'NCurses', 'SDL2', 'SFML', 'Game Design', 'School Project'],
     },
     {
       title: "AREA",
       description: "A IFTTT-like web/mobile platform that allows users to create custom automations between different services",
-      tags: ['NextJS', 'TypeScript', 'Tailwind', 'React Native', 'Expo', 'Supabase', 'Sentry'],
+      tags: ['NextJS', 'TypeScript', 'Tailwind', 'React Native', 'Expo', 'Supabase', 'Sentry', 'School Project'],
     },
     {
       title: "Noxus Cinema",
       description: "A Allo-ciné like web platform that allows users to discover movies, actors, read reviews in both Vue2 and Vue3",
-      tags: ['VueJS', 'Pinia', 'APIs', 'Tanstack'],
+      tags: ['VueJS', 'Pinia', 'APIs', 'Tanstack', 'Personal Project'],
     },
     {
       title: "Zappy",
       description: "An AI multiplayer game where AIs have to gather resources and evolve together to survive",
-      tags: ['C', "Unity", "C#", 'C++', 'SDL2', 'Python', 'Game Dev', "AI", "Networking"],
+      tags: ['C', "Unity", "C#", 'C++', 'SDL2', 'Python', 'Game Dev', "AI", "Networking", 'School Project'],
     },
     {
       title: "Image Compressor",
       description: "An Haskell CLI tool that compresses images using the Huffman algorithm in Haskell",
-      tags: ['Haskell', 'CLI', 'Image Processing', 'Huffman'],
+      tags: ['Haskell', 'CLI', 'Image Processing', 'Huffman', 'School Project'],
     },
     {
       title: "MiniLibC",
       description: "A custom C library that implements some of the standard library functions in Assembly",
-      tags: ['C', 'System Programming', 'Assembly'],
+      tags: ['C', 'System Programming', 'Assembly', 'School Project'],
     },
     {
       title: "MyRPG",
       description: "A RPG game developed in C with the CSFML library",
-      tags: ['C', 'CSFML', 'Game Dev'],
+      tags: ['C', 'CSFML', 'Game Dev', 'School Project'],
     },
     {
       title: "42sh",
       description: "A custom shell developed in C",
-      tags: ['C', 'System Programming'],
+      tags: ['C', 'System Programming', 'Shell', 'School Project'],
     },
     {
       title: "Trade",
       description: "A program that simulates a stock market developed in Python",
-      tags: ['Python', 'Algorithms'],
+      tags: ['Python', 'Algorithms', 'School Project'],
     },
     {
       title: "MyTeams",
       description: "A Teams-like chat application backend developed in C",
-      tags: ['C', 'Networking', 'SQLITE'],
+      tags: ['C', 'Networking', 'SQLITE', 'School Project'],
     },
     {
       title: "Antman",
       description: "A data compression algorithm developed in C",
-      tags: ['C', 'Algorithms'],
+      tags: ['C', 'Algorithms', 'School Project'],
     },
     {
       title: "Raytracer",
       description: "A raytracing program developed in C++",
-      tags: ['C++', 'Raytracing'],
+      tags: ['C++', 'Raytracing', 'School Project'],
     },
     {
       title: "Epytodo",
       description: "A todo list application backend developed in Node.js with Express",
-      tags: ['Node.js', 'Javascript', 'Express', 'SQL'],
+      tags: ['Node.js', 'Javascript', 'Express', 'SQL', 'School Project'],
     },
     {
       title: "MyNavy",
       description: "A Battleship-like game developed in C with signal handling",
-      tags: ['C', 'Signal Handling'],
+      tags: ['C', 'Signal Handling', 'School Project'],
+    },
+    {
+      title: "Temtem-Promise-V1",
+      description: "A promise library for Temtem API",
+      tags: ['Node.js', 'TypeScript', 'Wrapper', 'API', 'Personal Project'],
+    },
+    {
+      title: "MultiDex",
+      description: "A website that gathers all the dexes of the Pokemon-like games",
+      tags: ['NextJS', 'TypeScript', 'Tailwind', 'API', 'Personal Project'],
     }
 ]

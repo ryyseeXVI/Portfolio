@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { Menu, X, ChevronDown } from 'lucide-react'
+import { ChevronDown } from 'lucide-react'
 import { SiGithub, SiLinkedin, SiInstagram } from 'react-icons/si'
 import { Toaster } from '@/components/ui/toaster'
 import { ExperienceItem } from '@/components/items/ExperienceItem'
@@ -16,8 +16,7 @@ import { SKILLS_DATA, EXPERIENCE_DATA, PROJECTS_DATA } from './data'
 export default function Portfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState('home')
-
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
+  const [projectFilter, setProjectFilter] = useState('all') // Ajout du state pour le filtre
 
   useEffect(() => {
     const handleScroll = () => {
@@ -167,30 +166,26 @@ export default function Portfolio() {
             >
               Projects
             </motion.h2>
-            <motion.p
-              className="text-lg max-w-3xl mx-auto mb-12 text-center"
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
 
-            >
-              Here are some of the projects I have worked on. I am constantly looking for new ideas and challenges.
-            </motion.p>
-
-            <motion.p
-              className="text-lg max-w-3xl mx-auto mb-12 text-center"
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
-
-            >
-              Sadly, I can't link the repositories of my projects because of the Epitech's rules, but i am open to discuss about them in private (Not all of them are school projects).
-            </motion.p>
+            <div className="flex justify-center mb-8">
+              <select
+                value={projectFilter}
+                onChange={(e) => setProjectFilter(e.target.value)}
+                className="px-4 py-2 rounded-md bg-purple-100 dark:bg-purple-900 border-2 border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-600"
+              >
+                <option value="all">All Projects</option>
+                <option value="school">School Projects</option>
+                <option value="personal">Personal Projects</option>
+              </select>
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {PROJECTS_DATA.map((project) => (
+              {PROJECTS_DATA.filter(project => {
+                if (projectFilter === 'all') return true;
+                if (projectFilter === 'school') return project.tags.includes('School Project');
+                if (projectFilter === 'personal') return project.tags.includes('Personal Project');
+                return true;
+              }).map((project) => (
                 <ProjectCard 
                   key={project.title}
                   title={project.title} 
