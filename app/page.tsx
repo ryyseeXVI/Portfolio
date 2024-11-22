@@ -11,7 +11,7 @@ import { SkillCard } from '@/components/items/SkillCard'
 import ContactForm from '@/components/items/ContactForm'
 import { globalStyles } from './styles'
 import Header from '@/components/items/Header'
-import { SKILLS_DATA, EXPERIENCE_DATA, PROJECTS_DATA } from './data'
+import { SKILLS_DATA, EXPERIENCE_DATA, PROJECTS_DATA } from '../types/data'
 
 export default function Portfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
